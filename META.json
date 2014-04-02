@@ -29,7 +29,9 @@
       },
       "runtime" : {
          "requires" : {
-            "Perinci::Sub::PropertyUtil" : "0.02",
+            "Locale::TextDomain::UTF8" : "0",
+            "Perinci::Object::Metadata" : "0",
+            "Perinci::Sub::PropertyUtil" : "0.03",
             "Perinci::Sub::Wrapper" : "0.57",
             "Rinci" : "v1.1.43",
             "SHARYANTO::TableSpec" : "v1.0.1",
@@ -58,7 +60,7 @@
          "web" : "https://github.com/sharyanto/perl-Perinci-Sub-Property-result_table"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018001"
@@ -160,9 +162,9 @@
             "version" : "5.008"
          },
          {
-            "class" : "Dist::Zilla::Plugin::OurPkgVersion",
-            "name" : "@Author::SHARYANTO/OurPkgVersion",
-            "version" : "0.005001"
+            "class" : "Dist::Zilla::Plugin::SHARYANTO::OurPkgVersion",
+            "name" : "@Author::SHARYANTO/SHARYANTO::OurPkgVersion",
+            "version" : "0.02"
          },
          {
             "class" : "Dist::Zilla::Plugin::PodWeaver",
