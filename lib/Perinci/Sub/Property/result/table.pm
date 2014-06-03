@@ -9,7 +9,7 @@ use Locale::TextDomain::UTF8 'Perinci-Sub-Property-result-table';
 use Perinci::Object::Metadata;
 use Perinci::Sub::PropertyUtil qw(declare_property);
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 declare_property(
     name => 'result/table',
@@ -136,7 +136,7 @@ Perinci::Sub::Property::result::table - Specify table data in result
 
 =head1 VERSION
 
-version 0.02
+This document describes version 0.03 of Perinci::Sub::Property::result::table (from Perl distribution Perinci-Sub-Property-result-table), released on 2014-06-03.
 
 =head1 SYNOPSIS
 
@@ -215,6 +215,8 @@ Result section.
 (NOT YET IMPLEMENTED) When you generate documentation, the table specification
 is also included in the documentation.
 
+=item *
+
 (NOT YET IMPLEMENTED, IDEA) The user can also perhaps request the table
 specification, e.g. C<yourfunc --help=result-table-spec>, C<yourfunc
 --result-table-spec>.
@@ -243,7 +245,7 @@ The value of the C<table> property should be a L<DefHash>. Known properties:
 
 =item * spec => DEFHASH
 
-Required. Table data specification, specified using L<SHARYANTO::TableSpec>.
+Required. Table data specification, specified using L<TableDef>.
 
 =item * allow_extra_fields => BOOL (default: 0)
 

@@ -2,7 +2,9 @@ NAME
     Perinci::Sub::Property::result::table - Specify table data in result
 
 VERSION
-    version 0.02
+    This document describes version 0.03 of
+    Perinci::Sub::Property::result::table (from Perl distribution
+    Perinci-Sub-Property-result-table), released on 2014-06-03.
 
 SYNOPSIS
     In function Rinci metadata:
@@ -74,7 +76,7 @@ DESCRIPTION
     *   (NOT YET IMPLEMENTED) When you generate documentation, the table
         specification is also included in the documentation.
 
-        (NOT YET IMPLEMENTED, IDEA) The user can also perhaps request the
+    *   (NOT YET IMPLEMENTED, IDEA) The user can also perhaps request the
         table specification, e.g. "yourfunc --help=result-table-spec",
         "yourfunc --result-table-spec".
 
@@ -94,8 +96,7 @@ SPECIFICATION
 
     *   spec => DEFHASH
 
-        Required. Table data specification, specified using
-        SHARYANTO::TableSpec.
+        Required. Table data specification, specified using TableDef.
 
     *   allow_extra_fields => BOOL (default: 0)
 
